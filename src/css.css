@@ -1,0 +1,202 @@
+body, html {
+    font-family: "PT Sans Narrow", Verdana, Arial, sans-serif;
+    font-size: 6px;
+    color: white;
+    background-color: #111749;
+}
+
+.clearFix:after {
+    clear: both;
+    display: block;
+    content: '';
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.wrapper {
+    width: 500px;
+    margin: 0 auto;
+}
+/* Town styles*/
+.town-info_updater {
+    margin: 1.6rem 0 1rem;
+    font-size: 3.5rem;
+}
+
+.last-update {
+    margin: .5rem 1rem .8rem 0;
+}
+
+.icon-refresh {
+    font-size: 2.9rem;
+    cursor: pointer;
+}
+
+.current-town {
+    font-size: 7.5rem;
+    letter-spacing: 1rem;
+    text-transform: uppercase;
+}
+
+.addition-town-info {
+    margin-top: -.5rem;
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.town-info_weather {
+    padding: 5rem 4rem 5rem 2rem;
+    position: relative;
+    border-bottom: .3rem solid rgba(255, 255, 255, .25);
+}
+
+.large-icon {
+    font-size: 10rem;
+}
+
+.larger-icon,
+.weather-state,
+.town-info_daytime {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.weather-state {
+    margin-left: 2rem;
+    white-space: pre-line;
+}
+
+.weather-state_degrees {
+    font-size: 10rem;
+}
+
+.weather-state_description {
+    font-size: 2rem;
+}
+
+.page-tabs {
+    margin-top: 4rem;
+    font-size: 3rem;
+}
+
+.town {
+    margin-top: 6rem;
+}
+
+.town-input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    margin-top: 4rem;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.town-info_daytime {
+    font-size: 3rem;
+    position: absolute;
+    right: 1rem;
+    top: 6rem;
+    text-align: center;
+}
+
+.info_daytime_now {
+    margin-top: 3rem;
+    display: block;
+}
+
+.info-daytime_icon {
+    font-size: 4rem;
+}
+
+.details-list {
+    font-size: 0;
+    padding-top: 4rem;
+}
+
+.details-item {
+    width: 25%;
+    display: inline-block;
+}
+
+.details-item div {
+    text-align: center;
+}
+
+.details-item .icon {
+    font-size: 4.5rem;
+    display: block;
+    margin-bottom: 2rem;
+    vertical-align: top;
+    position: relative;
+}
+
+.wind-speed:after {
+    content: 'm/c';
+    vertical-align: top;
+    display: inline-block;
+    margin-top: -.3rem;
+    font-size: 2rem;
+}
+
+.details-item_index {
+    font-size: 3rem;
+    display: block;
+}
+
+.compass-display {
+    position: absolute;
+    left: 50%;
+    font-size: 1.3rem;
+    transform: translate(-50%, 130%);
+}
+
+.search {
+    position: relative;
+}
+
+.autoComplete {
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.autoComplete ul {
+    background-color: white;
+}
+
+.autoComplete > ul > li {
+    margin-left: 1rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    color: #555;
+    cursor: pointer;
+}
+
+.autoComplete > ul > li:hover {
+    background-color: #ececec;
+}
+
+.degrees:after {
+    content: '°';
+}
+
+.degrees-before:before {
+    content: "°";
+}
