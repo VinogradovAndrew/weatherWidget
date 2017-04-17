@@ -76,7 +76,9 @@ export default class App extends Component {
 
     changeSearchValue(cityName) {
         this.setState({searchValue: cityName});
-        this.getCitiesToAutoComplete(cityName);
+        if (cityName.length) {
+            this.getCitiesToAutoComplete(cityName);
+        }
     }
 
     getCitiesToAutoComplete(cityName) {
