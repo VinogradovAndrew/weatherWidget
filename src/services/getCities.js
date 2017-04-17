@@ -1,11 +1,9 @@
 let citiesService = new google.maps.places.AutocompleteService(null, {types: ['geocode']});
 
 export default function (value) {
-    if (!value) {
-        return;
-    }
-
     return new Promise((resolve, reject) => {
+        if (!value.length) resolve([]);
+
         citiesService.getPlacePredictions({input: value, types: ['(cities)']}, function (cities, status) {
             if (!cities || status !== 'OK') {
                 return resolve([]);
