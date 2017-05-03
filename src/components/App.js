@@ -8,8 +8,12 @@ export default class App extends Component {
     constructor(props) {
         //load Data from localStorage
         super(props);
-
-        this.state = loadState();
+        this.state = loadState() || {
+                cities: [],
+                searchCities: [],
+                activeTabId: '',
+                searchValue: ''
+        };
     }
 
     componentDidMount() {
